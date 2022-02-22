@@ -29,6 +29,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
     public void onClick(View view) {
         finish();
     }
+
     public void login(View view) {
         String uname = username.getText().toString();
         String paswd = password.getText().toString();

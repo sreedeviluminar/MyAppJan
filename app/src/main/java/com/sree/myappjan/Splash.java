@@ -3,8 +3,12 @@ package com.sree.myappjan;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
 
 public class Splash extends AppCompatActivity {
 
@@ -14,6 +18,10 @@ public class Splash extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash);
+
+        ImageView iv = (ImageView)findViewById(R.id.imageView);
+        Animation rotate = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.rotate);
+        iv.startAnimation(rotate);
 //
 //        Thread obj = new Thread(){
 //            @Override
@@ -40,7 +48,7 @@ public class Splash extends AppCompatActivity {
                  startActivity(i);
                  finish();
              }
-         },3000);
+         },5000);
     }
 
 }
