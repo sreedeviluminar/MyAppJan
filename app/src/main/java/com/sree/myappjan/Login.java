@@ -12,8 +12,8 @@ import android.widget.Toast;
 public class Login extends AppCompatActivity implements View.OnClickListener {
     EditText password, username;
     Button cancel;
-    String un = "Admin";
-    String pw = "abc123";
+    String un;
+    String pw;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +24,12 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         cancel = (Button) findViewById(R.id.cancel);
 
         cancel.setOnClickListener(this);
+
+        Intent intentfromreg = getIntent();
+        un= intentfromreg.getStringExtra("username");
+        pw=intentfromreg.getStringExtra("password");
+        username.setText(un);
+        password.setText(pw);
     }
     @Override
     public void onClick(View view) {
@@ -33,6 +39,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
     public void login(View view) {
         String uname = username.getText().toString();
         String paswd = password.getText().toString();
+
         if(uname.equals(un) && paswd.equals(pw)){
 
             Intent i = new Intent(getApplicationContext(),HomePage.class);
@@ -41,5 +48,12 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         }else{
             Toast.makeText(getApplicationContext(),"email or password incorrect",Toast.LENGTH_LONG).show();
         }
+    }
+
+
+
+    public void gotoregister(View view) {
+        Intent i = new Intent(getApplicationContext(),Registration.class);
+        startActivity(i);
     }
 }
