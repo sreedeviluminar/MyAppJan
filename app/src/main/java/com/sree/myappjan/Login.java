@@ -19,8 +19,10 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
+
         username = (EditText) findViewById(R.id.usernameee);
         password = (EditText) findViewById(R.id.pswd);
+
         cancel = (Button) findViewById(R.id.cancel);
 
         cancel.setOnClickListener(this);
@@ -28,12 +30,9 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         Intent intentfromreg = getIntent();
         un= intentfromreg.getStringExtra("username");
         pw=intentfromreg.getStringExtra("password");
+
         username.setText(un);
         password.setText(pw);
-    }
-    @Override
-    public void onClick(View view) {
-        finish();
     }
 
     public void login(View view) {
@@ -49,7 +48,10 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
             Toast.makeText(getApplicationContext(),"email or password incorrect",Toast.LENGTH_LONG).show();
         }
     }
-
+    @Override
+    public void onClick(View view) {
+        finish();
+    }
 
 
     public void gotoregister(View view) {
