@@ -30,7 +30,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         Intent intentfromreg = getIntent();
         un= intentfromreg.getStringExtra("username");
         pw=intentfromreg.getStringExtra("password");
-
+        password.setEnabled(false);
         username.setText(un);
         password.setText(pw);
     }

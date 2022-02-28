@@ -12,11 +12,11 @@
         android:id="@+id/url"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginTop="10dp"
         android:ems="10"
-        android:layout_marginTop="140dp"
-        android:inputType="textPersonName"
         android:hint="Enter url"
-        android:layout_gravity="start" />
+        android:inputType="textPersonName" />
 
     <Button
         android:id="@+id/go"
