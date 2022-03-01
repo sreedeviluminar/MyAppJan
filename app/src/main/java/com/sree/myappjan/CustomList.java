@@ -3,9 +3,12 @@ package com.sree.myappjan;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
-public class Fruits extends AppCompatActivity {
+public class CustomList extends AppCompatActivity {
 
     String fruits[] ={"Mango","Orange","Pineapple","Banana","Apple","Grapes"};
     int fruitsimg[] ={R.drawable.mango,R.drawable.orange,R.drawable.pineapple,
@@ -18,7 +21,14 @@ public class Fruits extends AppCompatActivity {
 
         ListView fruitlist  = (ListView) findViewById(R.id.fruitslist);
 
-        CustomFruits customFruits = new CustomFruits(getApplicationContext(),fruits,fruitsimg);
+        CustomListAdapter customFruits = new CustomListAdapter(getApplicationContext(),fruits,fruitsimg);
         fruitlist.setAdapter(customFruits);
+
+        fruitlist.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Toast.makeText(getApplicationContext(),"You Selected "+fruits[i]+" Fruit",Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 }

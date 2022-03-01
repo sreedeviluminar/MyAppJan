@@ -41,7 +41,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
 
         if(uname.equals(un) && paswd.equals(pw)){
 
-            Intent i = new Intent(getApplicationContext(),HomePage.class);
+            Intent i = new Intent(getApplicationContext(), ImplicitIntent.class);
             startActivity(i);
 
         }else{

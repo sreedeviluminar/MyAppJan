@@ -10,13 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyAppJan">
         <activity
-            android:name=".Fruits"
+            android:name=".CustomList"
             android:exported="false" />
         <activity
             android:name=".Registration"
             android:exported="false" />
         <activity
-            android:name=".HomePage"
+            android:name=".ImplicitIntent"
             android:exported="false" />
         <activity
             android:name=".Login"

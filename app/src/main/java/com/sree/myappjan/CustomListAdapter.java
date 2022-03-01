@@ -8,18 +8,17 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class CustomFruits  extends BaseAdapter {
+public class CustomListAdapter extends BaseAdapter {
     Context context;
     String fruits[];
     int fruitsimg[];
     LayoutInflater inflater;
 
-    public CustomFruits(Context applicationContext, String[] fruits, int[] fruitsimg) {
+    public CustomListAdapter(Context applicationContext, String[] fruits, int[] fruitsimg) {
         context=applicationContext;
         this.fruits=fruits;
         this.fruitsimg=fruitsimg;
     }
-
     @Override
     public int getCount() {
         return fruits.length;

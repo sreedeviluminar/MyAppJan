@@ -1,0 +1,43 @@
+package com.sree.myappjan;
+
+import android.os.Bundle;
+import android.widget.SeekBar;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+public class SeekBarActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_seek_bar);
+
+        TextView tv = (TextView)findViewById(R.id.textView3);
+        SeekBar seekBar = (SeekBar)findViewById(R.id.seekBar);
+
+        seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+
+            int progress=0;
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                this.progress=progress;
+               // Toast.makeText(getApplicationContext(),"progress "+progress,Toast.LENGTH_LONG).show();
+              tv.setTextSize(progress);
+
+            }
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+                Toast.makeText(getApplicationContext(),"started touching",Toast.LENGTH_LONG).show();
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+                Toast.makeText(getApplicationContext(),"seekbar progress "+progress,Toast.LENGTH_LONG).show();
+
+            }
+        });
+    }
+}

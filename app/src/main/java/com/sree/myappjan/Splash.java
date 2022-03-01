@@ -3,7 +3,6 @@ package com.sree.myappjan;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.media.Image;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.animation.Animation;
@@ -44,7 +43,7 @@ public class Splash extends AppCompatActivity {
          handler.postDelayed(new Runnable() {
              @Override
              public void run() {
-                 Intent i = new Intent(getApplicationContext(),Fruits.class);
+                 Intent i = new Intent(getApplicationContext(), CustomList.class);
                  startActivity(i);
                  finish();
              }
