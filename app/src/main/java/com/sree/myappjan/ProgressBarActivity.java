@@ -8,6 +8,7 @@ import android.widget.ProgressBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class ProgressBarActivity extends AppCompatActivity {
+
     int progress = 0;
     ProgressBar progressBar;
     Button b;
@@ -16,6 +17,7 @@ public class ProgressBarActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_progress_bar);
+
         b = (Button) findViewById(R.id.buttonprogress);
         progressBar = (ProgressBar) findViewById(R.id.progressBar);
 
@@ -24,6 +26,7 @@ public class ProgressBarActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 setProgressValue(progress);
+
                     }
                 });
 
@@ -37,7 +40,9 @@ public class ProgressBarActivity extends AppCompatActivity {
             @Override
             public void run() {
                 try {
+
                     Thread.sleep(1000);
+
                 }catch (InterruptedException e){
                     e.printStackTrace();
                 }

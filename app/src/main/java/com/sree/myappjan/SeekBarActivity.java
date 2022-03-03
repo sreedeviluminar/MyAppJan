@@ -20,8 +20,10 @@ public class SeekBarActivity extends AppCompatActivity {
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
 
             int progress=0;
+
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+
                 this.progress=progress;
                // Toast.makeText(getApplicationContext(),"progress "+progress,Toast.LENGTH_LONG).show();
               tv.setTextSize(progress);
