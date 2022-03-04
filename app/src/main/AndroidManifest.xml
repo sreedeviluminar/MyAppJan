@@ -10,9 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyAppJan">
         <activity
-            android:name=".Searchh"
-            android:exported="false" />
-        <activity
             android:name=".CustomList"
             android:exported="false" />
         <activity
