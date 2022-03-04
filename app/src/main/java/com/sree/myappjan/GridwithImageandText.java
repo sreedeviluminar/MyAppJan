@@ -34,8 +34,7 @@ public class GridwithImageandText extends AppCompatActivity {
             androidGridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
                 @Override
-                public void onItemClick(AdapterView<?> parent, View view,
-                                        int i, long id) {
+                public void onItemClick(AdapterView<?> parent, View view, int i, long id) {
                     Toast.makeText(getApplicationContext(), "GridView Item: " + gridViewString[+i], Toast.LENGTH_LONG).show();
                 }
             });

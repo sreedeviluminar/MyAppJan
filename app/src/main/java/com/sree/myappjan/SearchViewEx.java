@@ -13,6 +13,7 @@ import java.util.ArrayList;
 public class SearchViewEx extends AppCompatActivity {
         SearchView searchView;
         ListView listView;
+
         ArrayList<String> list;
         ArrayAdapter<String > adapter;
 
@@ -44,7 +45,9 @@ public class SearchViewEx extends AppCompatActivity {
                 public boolean onQueryTextSubmit(String query) {
 
                     if(list.contains(query)){
+
                         adapter.getFilter().filter(query);
+
                     }else{
                         Toast.makeText(SearchViewEx.this, "No Match found",Toast.LENGTH_LONG).show();
                     }

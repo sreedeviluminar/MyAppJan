@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyAppJan">
         <activity
+            android:name=".Searchh"
+            android:exported="false" />
+        <activity
             android:name=".CustomList"
             android:exported="false" />
         <activity
@@ -18,11 +21,11 @@
         <activity
             android:name=".ImplicitIntent"
             android:exported="false" />
-        <activity android:name=".ProgressBarActivity"/>
-        <activity android:name=".SeekBarActivity"/>
-        <activity android:name=".AutoCompleteTvActivity"/>
-        <activity android:name=".SearchViewEx"/>
-        <activity android:name=".GridwithImageandText"/>
+        <activity android:name=".ProgressBarActivity" />
+        <activity android:name=".SeekBarActivity" />
+        <activity android:name=".AutoCompleteTvActivity" />
+        <activity android:name=".SearchViewEx" />
+        <activity android:name=".GridwithImageandText" />
         <activity
             android:name=".Login"
             android:exported="true" />

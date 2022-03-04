@@ -43,7 +43,7 @@ public class Splash extends AppCompatActivity {
          handler.postDelayed(new Runnable() {
              @Override
              public void run() {
-                 Intent i = new Intent(getApplicationContext(), GridwithImageandText.class);
+                 Intent i = new Intent(getApplicationContext(), AutoCompleteTvActivity.class);
                  startActivity(i);
                  finish();
              }
