@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyAppJan">
         <activity
+            android:name=".ToggleSwitch"
+            android:exported="false" />
+        <activity
             android:name=".CustomList"
             android:exported="false" />
         <activity
@@ -23,6 +26,9 @@
         <activity android:name=".AutoCompleteTvActivity" />
         <activity android:name=".SearchViewEx" />
         <activity android:name=".GridwithImageandText" />
+        <activity android:name=".SlidingActivity"/>
+        <activity android:name=".HorizontalScroll"/>
+        <activity android:name=".VerticalScrol"/>
         <activity
             android:name=".Login"
             android:exported="true" />
