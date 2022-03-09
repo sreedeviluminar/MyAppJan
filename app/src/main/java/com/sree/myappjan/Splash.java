@@ -43,7 +43,7 @@ public class Splash extends AppCompatActivity {
          handler.postDelayed(new Runnable() {
              @Override
              public void run() {
-                 Intent i = new Intent(getApplicationContext(), ToggleSwitch.class);
+                 Intent i = new Intent(getApplicationContext(), CustomToastActivity.class);
                  startActivity(i);
                  finish();
              }

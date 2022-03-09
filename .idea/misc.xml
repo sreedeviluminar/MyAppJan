@@ -8,23 +8,29 @@
         <entry key="..\:/MyAppJan/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.19583333333333333" />
         <entry key="..\:/Projects/MyAppJan/app/src/main/res/drawable/circle.xml" value="0.1649122807017544" />
         <entry key="..\:/Projects/MyAppJan/app/src/main/res/drawable/oval.xml" value="0.1649122807017544" />
+        <entry key="..\:/Projects/MyAppJan/app/src/main/res/layout/activity_alert_custom.xml" value="0.1513157894736842" />
         <entry key="..\:/Projects/MyAppJan/app/src/main/res/layout/activity_auto_complete_tv.xml" value="0.1513157894736842" />
         <entry key="..\:/Projects/MyAppJan/app/src/main/res/layout/activity_fruits.xml" value="0.1513157894736842" />
         <entry key="..\:/Projects/MyAppJan/app/src/main/res/layout/activity_gridwith_imageand_text.xml" value="0.1513157894736842" />
         <entry key="..\:/Projects/MyAppJan/app/src/main/res/layout/activity_home_page.xml" value="0.22" />
-        <entry key="..\:/Projects/MyAppJan/app/src/main/res/layout/activity_horizontal_scoll.xml" value="0.1513157894736842" />
+        <entry key="..\:/Projects/MyAppJan/app/src/main/res/layout/activity_horizontal_scoll.xml" value="0.13333333333333333" />
         <entry key="..\:/Projects/MyAppJan/app/src/main/res/layout/activity_main.xml" value="0.1796875" />
         <entry key="..\:/Projects/MyAppJan/app/src/main/res/layout/activity_progress_bar.xml" value="0.1513157894736842" />
+        <entry key="..\:/Projects/MyAppJan/app/src/main/res/layout/activity_progress_dialog.xml" value="0.1513157894736842" />
+        <entry key="..\:/Projects/MyAppJan/app/src/main/res/layout/activity_samplee.xml" value="0.1513157894736842" />
         <entry key="..\:/Projects/MyAppJan/app/src/main/res/layout/activity_search_view_ex.xml" value="0.1" />
         <entry key="..\:/Projects/MyAppJan/app/src/main/res/layout/activity_searchh.xml" value="0.1513157894736842" />
         <entry key="..\:/Projects/MyAppJan/app/src/main/res/layout/activity_seek_bar.xml" value="0.1" />
         <entry key="..\:/Projects/MyAppJan/app/src/main/res/layout/activity_sliding.xml" value="0.1513157894736842" />
         <entry key="..\:/Projects/MyAppJan/app/src/main/res/layout/activity_toggle_switch.xml" value="0.1513157894736842" />
         <entry key="..\:/Projects/MyAppJan/app/src/main/res/layout/activity_vertical_scrol.xml" value="0.1" />
+        <entry key="..\:/Projects/MyAppJan/app/src/main/res/layout/activity_web_view.xml" value="0.1513157894736842" />
+        <entry key="..\:/Projects/MyAppJan/app/src/main/res/layout/alert_dialog_with_imageview.xml" value="0.1513157894736842" />
+        <entry key="..\:/Projects/MyAppJan/app/src/main/res/layout/custom_toast.xml" value="0.1513157894736842" />
         <entry key="..\:/Projects/MyAppJan/app/src/main/res/layout/customlist.xml" value="0.1513157894736842" />
         <entry key="..\:/Projects/MyAppJan/app/src/main/res/layout/list_item_grid.xml" value="0.1513157894736842" />
         <entry key="..\:/Projects/MyAppJan/app/src/main/res/layout/login.xml" value="0.16666666666666666" />
-        <entry key="..\:/Projects/MyAppJan/app/src/main/res/layout/registration.xml" value="0.22" />
+        <entry key="..\:/Projects/MyAppJan/app/src/main/res/layout/registration.xml" value="0.1" />
         <entry key="..\:/Projects/MyAppJan/app/src/main/res/layout/splash.xml" value="0.22" />
       </map>
     </option>

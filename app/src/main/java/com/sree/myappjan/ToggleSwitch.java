@@ -3,14 +3,12 @@ package com.sree.myappjan;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Switch;
 import android.widget.Toast;
 
 public class ToggleSwitch extends AppCompatActivity {
-
 
         private Switch sw1,sw2;
         private  Button btnGet;
@@ -29,10 +27,12 @@ public class ToggleSwitch extends AppCompatActivity {
                         str1 = sw1.getTextOn().toString();
                     else
                         str1 = sw1.getTextOff().toString();
+
                     if (sw2.isChecked())
                         str2 = sw2.getTextOn().toString();
                     else
                         str2 = sw2.getTextOff().toString();
+
                     Toast.makeText(getApplicationContext(), "Switch1 -  " + str1 + " \n" + "Switch2 - " + str2,Toast.LENGTH_SHORT).show();
                 }
             });

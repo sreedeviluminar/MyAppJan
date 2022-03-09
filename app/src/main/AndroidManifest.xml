@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.sree.myappjan">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,28 +12,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyAppJan">
         <activity
-            android:name=".ToggleSwitch"
+            android:name=".Samplee"
             android:exported="false" />
-        <activity
-            android:name=".CustomList"
-            android:exported="false" />
-        <activity
-            android:name=".Registration"
-            android:exported="false" />
-        <activity
-            android:name=".ImplicitIntent"
-            android:exported="false" />
+        <activity android:name=".AlertCustom"/>
+        <activity android:name=".CustomToastActivity"/>
+        <activity android:name=".ProgressDialogActivity"/>
+        <activity android:name=".ToggleSwitch" />
+        <activity android:name=".CustomList" />
+        <activity android:name=".Registration" />
+        <activity android:name=".ImplicitIntent" />
         <activity android:name=".ProgressBarActivity" />
         <activity android:name=".SeekBarActivity" />
         <activity android:name=".AutoCompleteTvActivity" />
         <activity android:name=".SearchViewEx" />
         <activity android:name=".GridwithImageandText" />
-        <activity android:name=".SlidingActivity"/>
-        <activity android:name=".HorizontalScroll"/>
-        <activity android:name=".VerticalScrol"/>
-        <activity
-            android:name=".Login"
-            android:exported="true" />
+        <activity android:name=".SlidingActivity" />
+        <activity android:name=".HorizontalScroll" />
+        <activity android:name=".VerticalScrol" />
+        <activity android:name=".WebViewActivity" />
+        <activity android:name=".Login" />
         <activity
             android:name=".Splash"
             android:exported="true"
