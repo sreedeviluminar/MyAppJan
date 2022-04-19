@@ -101,8 +101,8 @@
         <LinearLayout
             android:layout_span="4"
             android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
         <CheckBox
             android:layout_width="wrap_content"

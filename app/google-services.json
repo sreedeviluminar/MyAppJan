@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1058887730230",
+    "project_id": "sample-b7dfd",
+    "storage_bucket": "sample-b7dfd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1058887730230:android:632341a0cb411ef6b88497",
+        "android_client_info": {
+          "package_name": "com.sree.myappjan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1058887730230-lndu9i6gd45dbp508vnmdo6k557fet9j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCxpwaHtNRxUEkH1hTsCOnyA49RBlI-mo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1058887730230-lndu9i6gd45dbp508vnmdo6k557fet9j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

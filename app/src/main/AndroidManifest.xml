@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.sree.myappjan">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -12,11 +12,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyAppJan">
         <activity
+            android:name=".Splash"
+            android:exported="false" />
+        <activity
             android:name=".Samplee"
             android:exported="false" />
-        <activity android:name=".AlertCustom"/>
-        <activity android:name=".CustomToastActivity"/>
-        <activity android:name=".ProgressDialogActivity"/>
+        <activity android:name=".AlertCustom" />
+        <activity android:name=".CustomToastActivity" />
+        <activity android:name=".ProgressDialogActivity" />
         <activity android:name=".ToggleSwitch" />
         <activity android:name=".CustomList" />
         <activity android:name=".Registration" />
@@ -30,16 +33,19 @@
         <activity android:name=".HorizontalScroll" />
         <activity android:name=".VerticalScrol" />
         <activity android:name=".WebViewActivity" />
-        <activity android:name=".Login" />
-        <activity
-            android:name=".Splash"
-            android:exported="true"
-            android:theme="@style/mytheme">
+        <activity android:name=".Login"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".ActivityLifecycle"
+            android:exported="true"
+            android:theme="@style/mytheme">
+
         </activity>
     </application>
 

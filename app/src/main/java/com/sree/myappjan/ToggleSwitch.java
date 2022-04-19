@@ -19,10 +19,12 @@ public class ToggleSwitch extends AppCompatActivity {
             sw1 = (Switch)findViewById(R.id.switch1);
             sw2 = (Switch)findViewById(R.id.switch2);
             btnGet = (Button)findViewById(R.id.getBtn);
+
             btnGet.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     String str1, str2;
+
                     if (sw1.isChecked())
                         str1 = sw1.getTextOn().toString();
                     else

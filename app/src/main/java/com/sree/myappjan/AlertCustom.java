@@ -25,9 +25,7 @@ public class AlertCustom extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_alert_custom);
-
     }
-
 
     public void simpleAlert(View view) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
@@ -36,10 +34,7 @@ public class AlertCustom extends AppCompatActivity {
         builder.setPositiveButton("OK",
                 new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
-                        Toast.makeText(getApplicationContext(),
-                                "OK was clicked",
-                                Toast.LENGTH_SHORT).show();
-
+                        Toast.makeText(getApplicationContext(), "OK was clicked", Toast.LENGTH_SHORT).show();
                     }
                 });
         builder.setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
@@ -48,19 +43,15 @@ public class AlertCustom extends AppCompatActivity {
                         android.R.string.no, Toast.LENGTH_SHORT).show();
             }
         });
-
-
         builder.setCancelable(false);
         builder.show();
     }
-
     public void withItems(View view) {
 
         final String[] items = {"Apple", "Banana", "Orange", "Grapes"};
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("List of Items")
 
-                .setItems(items, new DialogInterface.OnClickListener() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("List of Items").setItems(items, new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
                         Toast.makeText(getApplicationContext(), items[which] + " is clicked", Toast.LENGTH_SHORT).show();
                     }
@@ -85,15 +76,17 @@ public class AlertCustom extends AppCompatActivity {
     public void withMultiChoiceItems(View view) {
         final String[] items = {"Apple", "Banana", "Orange", "Grapes"};
         final ArrayList<Integer> selectedList = new ArrayList<>();
+
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
 
         builder.setTitle("This is list choice dialog box");
+
         builder.setMultiChoiceItems(items, null,
                 new DialogInterface.OnMultiChoiceClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int i, boolean isChecked) {
                         if (isChecked) {
-                            Log.d("API123","which"+ i);
+                            Log.d("API123", "which" + i);
                             selectedList.add(i);
                         } else if (selectedList.contains(i)) {
                             selectedList.remove(Integer.valueOf(i));

@@ -39,7 +39,6 @@ public class Registration extends AppCompatActivity {
             }
         });
 
-
         reg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
